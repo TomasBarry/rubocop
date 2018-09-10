@@ -64,7 +64,7 @@ RSpec.describe 'RuboCop Project', type: :feature do
     end
   end
 
-  describe 'config/disabled.yml' do
+  xdescribe 'config/disabled.yml' do
     include_context 'configuration file', 'config/disabled.yml'
 
     it 'disables all cops in the file' do
@@ -77,7 +77,7 @@ RSpec.describe 'RuboCop Project', type: :feature do
     end
   end
 
-  describe 'config/enabled.yml' do
+  xdescribe 'config/enabled.yml' do
     include_context 'configuration file', 'config/enabled.yml'
 
     it 'enables all cops in the file' do

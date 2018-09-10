@@ -17,6 +17,12 @@ eval(something)
 binding.eval(something)
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.47` | Float
+
 ## Security/JSONLoad
 
 Enabled by default | Supports autocorrection
@@ -49,7 +55,9 @@ JSON.parse("{}")
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionChanged | `0.44` | Float
 AutoCorrect | `false` | Boolean
+SafeAutoCorrect | `falseVersionA` | String
 
 ### References
 
@@ -78,6 +86,12 @@ Marshal.dump("{}")
 # okish - deep copy hack
 Marshal.load(Marshal.dump({}))
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.47` | Float
 
 ### References
 
@@ -109,6 +123,12 @@ IO.popen(something)
 URI.parse(something).open
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.53` | Float
+
 ## Security/YAMLLoad
 
 Enabled by default | Supports autocorrection
@@ -129,6 +149,12 @@ YAML.load("--- foo")
 YAML.safe_load("--- foo")
 YAML.dump("foo")
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.47` | Float
 
 ### References
 

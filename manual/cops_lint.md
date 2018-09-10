@@ -29,6 +29,12 @@ foo == bar { |b| b.baz }
 foo = ->(bar) { bar.baz }
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.48` | Float
+
 ### References
 
 * [https://github.com/rubocop-hq/ruby-style-guide#syntax](https://github.com/rubocop-hq/ruby-style-guide#syntax)
@@ -144,6 +150,12 @@ BigDecimal.new(123.456, 3)
 BigDecimal(123.456, 3)
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.53` | Float
+
 ## Lint/BooleanSymbol
 
 Enabled by default | Supports autocorrection
@@ -169,6 +181,12 @@ true
 # good
 false
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.5` | Float
 
 ## Lint/CircularArgumentReference
 
@@ -254,6 +272,12 @@ def some_method
   do_something
 end
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionChanged | `0.49` | Float
 
 ## Lint/DeprecatedClassMethods
 
@@ -491,6 +515,7 @@ end
 Name | Default value | Configurable values
 --- | --- | ---
 AutoCorrect | `false` | Boolean
+VersionChanged | `0.48` | Float
 
 ## Lint/EmptyExpression
 
@@ -519,6 +544,12 @@ if (some_expression)
 end
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.45` | Float
+
 ## Lint/EmptyInterpolation
 
 Enabled by default | Supports autocorrection
@@ -539,6 +570,12 @@ This cop checks for empty interpolation.
 
 "result is #{some_result}"
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionChanged | `0.45` | Float
 
 ## Lint/EmptyWhen
 
@@ -566,6 +603,12 @@ when bar then 1
 when baz then 2
 end
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.45` | Float
 
 ## Lint/EndInMethod
 
@@ -696,6 +739,12 @@ else
 end
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.56` | Float
+
 ## Lint/FloatOutOfRange
 
 Enabled by default | Supports autocorrection
@@ -718,6 +767,12 @@ float = 3.0e400
 
 float = 42.9
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.36` | Float
 
 ## Lint/FormatParameterMismatch
 
@@ -820,6 +875,12 @@ array = [
 ]
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.36` | Float
+
 ## Lint/IneffectiveAccessModifier
 
 Enabled by default | Supports autocorrection
@@ -869,6 +930,12 @@ class C
 end
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.36` | Float
+
 ## Lint/InheritException
 
 Enabled by default | Supports autocorrection
@@ -909,6 +976,7 @@ class C < StandardError; end
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.41` | Float
 EnforcedStyle | `runtime_error` | `runtime_error`, `standard_error`
 
 ## Lint/InterpolationCheck
@@ -965,6 +1033,12 @@ if some_var && some_condition
   do_something
 end
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.51` | Float
 
 ## Lint/LiteralInInterpolation
 
@@ -1085,6 +1159,7 @@ x += 1
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.52` | Float
 MaximumRangeSize | `Infinity` | Float
 
 ## Lint/MultipleCompare
@@ -1112,6 +1187,12 @@ x < y < z
 x < y && y < z
 10 <= x && x <= 20
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.47` | Float
 
 ## Lint/NestedMethodDefinition
 
@@ -1323,6 +1404,12 @@ p [''.frozen?, ''.encoding] #=> [true, #<Encoding:US-ASCII>]
 p [''.frozen?, ''.encoding] #=> [true, #<Encoding:US-ASCII>]
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.53` | Float
+
 ## Lint/ParenthesesAsGroupedExpression
 
 Enabled by default | Supports autocorrection
@@ -1374,6 +1461,12 @@ rather than meant to be part of the resulting strings.
 %w(foo bar)
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.41` | Float
+
 ## Lint/PercentSymbolArray
 
 Enabled by default | Supports autocorrection
@@ -1399,6 +1492,12 @@ rather than meant to be part of the resulting symbols.
 %i(foo bar)
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.41` | Float
+
 ## Lint/RandOne
 
 Enabled by default | Supports autocorrection
@@ -1423,6 +1522,12 @@ rand(-1.0)
 
 0 # just use 0 instead
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.36` | Float
 
 ## Lint/RedundantWithIndex
 
@@ -1456,6 +1561,12 @@ ary.each do |v|
 end
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.5` | Float
+
 ## Lint/RedundantWithObject
 
 Enabled by default | Supports autocorrection
@@ -1488,6 +1599,12 @@ ary.each do |v|
 end
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.51` | Float
+
 ## Lint/RegexpAsCondition
 
 Enabled by default | Supports autocorrection
@@ -1510,6 +1627,12 @@ if /foo/ =~ $_
   do_something
 end
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.51` | Float
 
 ## Lint/RequireParentheses
 
@@ -1617,6 +1740,12 @@ rescue NameError
 end
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.49` | Float
+
 ## Lint/ReturnInVoidContext
 
 Enabled by default | Supports autocorrection
@@ -1653,6 +1782,12 @@ def foo=(bar)
 end
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.5` | Float
+
 ## Lint/SafeNavigationChain
 
 Enabled by default | Supports autocorrection
@@ -1686,6 +1821,8 @@ x&.foo || bar
 Name | Default value | Configurable values
 --- | --- | ---
 Whitelist | `present?`, `blank?`, `presence`, `try`, `try!` | Array
+VersionAdded | `0.47` | Float
+VersionChanged | `0.56` | Float
 
 ## Lint/SafeNavigationConsistency
 
@@ -1724,6 +1861,7 @@ foo&.bar && (foobar.baz || foo&.baz)
 Name | Default value | Configurable values
 --- | --- | ---
 Whitelist | `present?`, `blank?`, `presence`, `try`, `try!` | Array
+VersionAdded | `0.55` | Float
 
 ## Lint/ScriptPermission
 
@@ -1760,6 +1898,13 @@ puts 'hello, world'
 
 puts 'hello, world'
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.49` | Float
+VersionChanged | `0.5` | Float
 
 ## Lint/ShadowedArgument
 
@@ -1836,6 +1981,7 @@ end
 Name | Default value | Configurable values
 --- | --- | ---
 IgnoreImplicitReferences | `false` | Boolean
+VersionAdded | `0.52` | Float
 
 ## Lint/ShadowedException
 
@@ -1884,6 +2030,12 @@ rescue Errno::EAGAIN, Errno::EWOULDBLOCK
   handle_standard_error
 end
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.41` | Float
 
 ## Lint/ShadowingOuterLocalVariable
 
@@ -2011,6 +2163,12 @@ This cop checks for using Fixnum or Bignum constant.
 1.is_a?(Integer)
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.43` | Float
+
 ## Lint/UnneededCopDisableDirective
 
 Enabled by default | Supports autocorrection
@@ -2038,6 +2196,12 @@ x += 1
 # good
 x += 1
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.53` | Float
 
 ## Lint/UnneededCopEnableDirective
 
@@ -2076,6 +2240,12 @@ baaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaarrrrrrrrrr
 baz
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.53` | Float
+
 ## Lint/UnneededRequireStatement
 
 Enabled by default | Supports autocorrection
@@ -2103,6 +2273,12 @@ require 'thread'
 # good
 require 'unloaded_feature'
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.51` | Float
 
 ## Lint/UnneededSplatExpansion
 
@@ -2157,6 +2333,12 @@ else
   baz
 end
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.43` | Float
 
 ## Lint/UnreachableCode
 
@@ -2321,6 +2503,12 @@ URI.decode_www_form(enc_uri)
 URI.decode_www_form_component(enc_uri)
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.5` | Float
+
 ## Lint/UriRegexp
 
 Enabled by default | Supports autocorrection
@@ -2339,6 +2527,12 @@ URI.regexp('http://example.com')
 # good
 URI::DEFAULT_PARSER.make_regexp('http://example.com')
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.5` | Float
 
 ## Lint/UselessAccessModifier
 
@@ -2439,6 +2633,7 @@ end
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionChanged | `0.47` | Float
 ContextCreatingMethods | `[]` | Array
 MethodCreatingMethods | `[]` | Array
 

@@ -1,0 +1,937 @@
+#################### Removed cops ###############################
+Lint/UnneededDisable:
+  VersionChanged: 0.36
+  VersionRemoved: 0.53
+  # Renamed to Lint/UnneededCopDisableDirective
+
+Lint/RescueWithoutErrorClass:
+  VersionAdded: 0.50
+  VersionRemoved: 0.52
+  # Replaced by Style/RescueStandardError
+
+Lint/SplatKeywordArguments:
+  VersionAdded: 0.56
+  VersionRemoved: 0.57
+  # https://github.com/rubocop-hq/rubocop/issues/5887
+
+Style/MethodMissing:
+  VersionRemoved: 0.56
+  # Split Style/MethodMissing into two cops, Style/MethodMissingSuper and Style/MissingRespondToMissing
+
+Performance/HashEachMethods:
+  VersionAdded: 0.36
+  VersionChanged: 0.50
+  VersionRemoved: 0.53
+
+Style/TrailingCommmaInLiteral:
+  VersionRemoved: 0.53
+  # https://github.com/rubocop-hq/rubocop/issues/3394
+
+Style/ExtendSelf:
+  VersionAdded: 0.52
+  VersionRemoved: 0.52.1
+
+Lint/InvalidCharacterLiteral:
+  VersionRemoved: 0.51
+
+Style/EmptyLineAfterGuardClause:
+  VersionAdded: 0.53
+  VersionRemoved: 0.56
+  # moved to Layout department
+
+Lint/EndAlignment:
+  VersionChanged: 0.47
+  VersionRemoved: 0.53
+  # Moved to the Layout department
+
+Lint/DefEndAlignment:
+  VersionChanged: 0.47
+  VersionRemoved: 0.53
+  # Moved to the Layout department
+
+Lint/BlockAlignment:
+  VersionChanged: 0.47
+  VersionRemoved: 0.53
+  # Moved to the Layout department
+
+Lint/ConditionPosition:
+  VersionRemoved: 0.53
+  # Moved to the Layout department
+
+Lint/RescueWithoutErrorClass:
+  VersionRemoved: 0.52
+  # replaced by Style/RescueStandardError
+
+Layout/SpaceInsideBrackets:
+  VersionAdded: 0.49
+  VersionRemoved: 0.52
+  # replaced by Layout/SpaceInsideReferenceBrackets and Layout/SpaceInsideArrayLiteralBrackets
+
+Lint/LiteralInCondition:
+  VersionRemoved: 0.51
+  # renamed to Lint/LiteralAsCondition
+
+Style/HeredocDelimiters:
+  VersionRemoved: 0.50
+  # Moved to Naming
+
+Style/AccessorMethodName:
+  VersionRemoved: 0.50
+  # Moved to Naming
+
+Style/AsciiIdentifiers:
+  VersionRemoved: 0.50
+  # Moved to Naming
+
+Style/ClassAndModuleCamelCase:
+  VersionRemoved: 0.50
+  # Moved to Naming
+
+Style/ConstantName:
+  VersionRemoved: 0.50
+  # Moved to Naming
+
+Style/FileName:
+  VersionChanged: 0.36
+  VersionRemoved: 0.50
+  # Moved to Naming
+
+Style/HeredocDelimiterCase:
+  VersionRemoved: 0.50
+  # Moved to Naming
+
+Style/HeredocDelimiterNaming:
+  VersionRemoved: 0.50
+  # Moved to Naming
+
+Style/MethodName:
+  VersionRemoved: 0.50
+  # Moved to Naming
+
+Style/OpMethod:
+  VersionRemoved: 0.50
+  # Moved to Naming
+
+Style/PredicateName:
+  VersionRemoved: 0.50
+  # Moved to Naming
+
+Style/VariableName:
+  VersionRemoved: 0.50
+  # Moved to Naming
+
+Style/VariableNumber:
+  VersionAdded: 0.43
+  VersionRemoved: 0.50
+  # Moved to Naming
+
+Style/AccessModifierIndentation:
+  VersionChanged: 0.36
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/AlignArray:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/AlignParameters:
+  VersionChanged: 0.41
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/BlockEndNewline:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/CaseIndentation:
+  VersionChanged: 0.36
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/ClosingParenthesisIndentation:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/CommentIndentation:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/DotPosition:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/ElseAlignment:
+  VersionChanged: 0.47
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/EmptyLineBetweenDefs:
+  VersionChanged: 0.48
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/EmptyLines:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/EmptyLinesAroundAccessModifier:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/EmptyLinesAroundBeginBody:
+  VersionAdded: 0.48
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/EmptyLinesAroundBlockBody:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/EmptyLinesAroundClassBody:
+  VersionChanged: 0.46
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/EmptyLinesAroundExceptionHandlingKeywords:
+  VersionAdded: 0.48
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/EmptyLinesAroundModuleBody:
+  VersionChanged: 0.46
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/EmptyLinesAroundMethodBody:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/EndOfLine:
+  VersionChanged: 0.48
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/ExtraSpacing:
+  VersionChanged: 0.36
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/InitialIndentation:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/FirstParameterIndentation:
+  VersionChanged: 0.36
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/IndentationConsistency:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/IndentationWidth:
+  VersionChanged: 0.47
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/IndentArray:
+  VersionChanged: 0.36
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/IndentAssignment:
+  VersionChanged: 0.36
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/IndentHash:
+  VersionChanged: 0.36
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/IndentHeredoc:
+  VersionAdded: 0.48
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/SpaceInLambdaLiteral:
+  VersionAdded: 0.45
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/LeadingCommentSpace:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/MultilineArrayBraceLayout:
+  VersionAdded: 0.36
+  VersionChanged: 0.40
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/MultilineAssignmentLayout:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/MultilineBlockLayout:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/MultilineHashBraceLayout:
+  VersionAdded: 0.37
+  VersionChanged: 0.40
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/MultilineMethodCallBraceLayout:
+  VersionAdded: 0.37
+  VersionChanged: 0.40
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/MultilineMethodCallIndentation:
+  VersionAdded: 0.36
+  VersionChanged: 0.41
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/MultilineMethodDefinitionBraceLayout:
+  VersionAdded: 0.37
+  VersionChanged: 0.40
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/MultilineOperationIndentation:
+  VersionChanged: 0.36
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/EmptyLineAfterMagicComment:
+  VersionAdded: 0.48
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/RescueEnsureAlignment:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/SpaceAfterControlKeyword:
+  VersionRemoved: 0.37
+  # replaced by Style/SpaceAroundKeyword
+
+Style/SpaceAroundBlockParameters:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/SpaceAroundEqualsInParameterDefault:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/SpaceAroundKeyword:
+  VersionAdded: 0.37
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/SpaceAroundOperators:
+  VersionChanged: 0.36
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/SpaceBeforeBlockBraces:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/SpaceBeforeComma:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/SpaceBeforeComment:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/SpaceBeforeModifierKeyword:
+  VersionRemoved: 0.37
+  # replaced by Style/SpaceAroundKeyword
+
+Style/SpaceBeforeSemicolon:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/SpaceBeforeFirstArg:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/SpaceAfterColon:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+vStyle/SpaceAfterComma:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/SpaceAfterMethodName:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/SpaceAfterNot:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/SpaceAfterSemicolon:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/SpaceInsideArrayPercentLiteral:
+  VersionAdded: 0.41
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/SpaceInsidePercentLiteralDelimiters:
+  VersionAdded: 0.41
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/SpaceInsideBrackets:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/SpaceInsideBlockBraces:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/SpaceInsideHashLiteralBraces:
+  VersionChanged: 0.41
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/SpaceInsideParens:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/SpaceInsideRangeLiteral:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/SpaceInsideStringInterpolation:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+#################### Removed cops ###############################
+
+Lint/SplatKeywordArguments:
+  VersionAdded: 0.56
+  VersionRemoved: 0.57
+  # https://github.com/rubocop-hq/rubocop/issues/5887
+
+Style/MethodMissing:
+  VersionRemoved: 0.56
+  # Split Style/MethodMissing into two cops, Style/MethodMissingSuper and Style/MissingRespondToMissing
+
+Performance/HashEachMethods:
+  VersionAdded: 0.36
+  VersionChanged: 0.50
+  VersionRemoved: 0.53
+
+Style/TrailingCommmaInLiteral:
+  VersionRemoved: 0.53
+  # https://github.com/rubocop-hq/rubocop/issues/3394
+
+Style/ExtendSelf:
+  VersionAdded: 0.52
+  VersionRemoved: 0.52.1
+
+Lint/InvalidCharacterLiteral:
+  VersionRemoved: 0.51
+
+Style/EmptyLineAfterGuardClause:
+  VersionAdded: 0.53
+  VersionRemoved: 0.56
+  # moved to Layout department
+
+Lint/EndAlignment:
+  VersionChanged: 0.47
+  VersionRemoved: 0.53
+  # Moved to the Layout department
+
+Lint/DefEndAlignment:
+  VersionChanged: 0.47
+  VersionRemoved: 0.53
+  # Moved to the Layout department
+
+Lint/BlockAlignment:
+  VersionChanged: 0.47
+  VersionRemoved: 0.53
+  # Moved to the Layout department
+
+Lint/ConditionPosition:
+  VersionRemoved: 0.53
+  # Moved to the Layout department
+
+Lint/RescueWithoutErrorClass:
+  VersionRemoved: 0.52
+  # replaced by Style/RescueStandardError
+
+Layout/SpaceInsideBrackets:
+  VersionAdded: 0.49
+  VersionRemoved: 0.52
+  # replaced by Layout/SpaceInsideReferenceBrackets and Layout/SpaceInsideArrayLiteralBrackets
+
+Lint/LiteralInCondition:
+  VersionRemoved: 0.51
+  # renamed to Lint/LiteralAsCondition
+
+Style/HeredocDelimiters:
+  VersionRemoved: 0.50
+  # Moved to Naming
+
+Style/AccessorMethodName:
+  VersionRemoved: 0.50
+  # Moved to Naming
+
+Style/AsciiIdentifiers:
+  VersionRemoved: 0.50
+  # Moved to Naming
+
+Style/ClassAndModuleCamelCase:
+  VersionRemoved: 0.50
+  # Moved to Naming
+
+Style/ConstantName:
+  VersionRemoved: 0.50
+  # Moved to Naming
+
+Style/FileName:
+  VersionChanged: 0.36
+  VersionRemoved: 0.50
+  # Moved to Naming
+
+Style/HeredocDelimiterCase:
+  VersionRemoved: 0.50
+  # Moved to Naming
+
+Style/HeredocDelimiterNaming:
+  VersionRemoved: 0.50
+  # Moved to Naming
+
+Style/MethodName:
+  VersionRemoved: 0.50
+  # Moved to Naming
+
+Style/OpMethod:
+  VersionRemoved: 0.50
+  # Moved to Naming
+
+Style/PredicateName:
+  VersionRemoved: 0.50
+  # Moved to Naming
+
+Style/VariableName:
+  VersionRemoved: 0.50
+  # Moved to Naming
+
+Style/VariableNumber:
+  VersionAdded: 0.43
+  VersionRemoved: 0.50
+  # Moved to Naming
+
+Style/AccessModifierIndentation:
+  VersionChanged: 0.36
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/AlignArray:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/AlignParameters:
+  VersionChanged: 0.41
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/BlockEndNewline:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/CaseIndentation:
+  VersionChanged: 0.36
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/ClosingParenthesisIndentation:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/CommentIndentation:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/DotPosition:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/ElseAlignment:
+  VersionChanged: 0.47
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/EmptyLineBetweenDefs:
+  VersionChanged: 0.48
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/EmptyLines:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/EmptyLinesAroundAccessModifier:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/EmptyLinesAroundBeginBody:
+  VersionAdded: 0.48
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/EmptyLinesAroundBlockBody:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/EmptyLinesAroundClassBody:
+  VersionChanged: 0.46
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/EmptyLinesAroundExceptionHandlingKeywords:
+  VersionAdded: 0.48
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/EmptyLinesAroundModuleBody:
+  VersionChanged: 0.46
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/EmptyLinesAroundMethodBody:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/EndOfLine:
+  VersionChanged: 0.48
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/ExtraSpacing:
+  VersionChanged: 0.36
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/InitialIndentation:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/FirstParameterIndentation:
+  VersionChanged: 0.36
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/IndentationConsistency:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/IndentationWidth:
+  VersionChanged: 0.47
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/IndentArray:
+  VersionChanged: 0.36
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/IndentAssignment:
+  VersionChanged: 0.36
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/IndentHash:
+  VersionChanged: 0.36
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/IndentHeredoc:
+  VersionAdded: 0.48
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/SpaceInLambdaLiteral:
+  VersionAdded: 0.45
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/LeadingCommentSpace:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/MultilineArrayBraceLayout:
+  VersionAdded: 0.36
+  VersionChanged: 0.40
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/MultilineAssignmentLayout:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/MultilineBlockLayout:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/MultilineHashBraceLayout:
+  VersionAdded: 0.37
+  VersionChanged: 0.40
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/MultilineMethodCallBraceLayout:
+  VersionAdded: 0.37
+  VersionChanged: 0.40
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/MultilineMethodCallIndentation:
+  VersionAdded: 0.36
+  VersionChanged: 0.41
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/MultilineMethodDefinitionBraceLayout:
+  VersionAdded: 0.37
+  VersionChanged: 0.40
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/MultilineOperationIndentation:
+  VersionChanged: 0.36
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/EmptyLineAfterMagicComment:
+  VersionAdded: 0.48
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/RescueEnsureAlignment:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/SpaceAfterControlKeyword:
+  VersionRemoved: 0.37
+  # replaced by Style/SpaceAroundKeyword
+
+Style/SpaceAroundBlockParameters:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/SpaceAroundEqualsInParameterDefault:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/SpaceAroundKeyword:
+  VersionAdded: 0.37
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/SpaceAroundOperators:
+  VersionChanged: 0.36
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/SpaceBeforeBlockBraces:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/SpaceBeforeComma:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/SpaceBeforeComment:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/SpaceBeforeModifierKeyword:
+  VersionRemoved: 0.37
+  # replaced by Style/SpaceAroundKeyword
+
+Style/SpaceBeforeSemicolon:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/SpaceBeforeFirstArg:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/SpaceAfterColon:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+vStyle/SpaceAfterComma:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/SpaceAfterMethodName:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/SpaceAfterNot:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/SpaceAfterSemicolon:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/SpaceInsideArrayPercentLiteral:
+  VersionAdded: 0.41
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/SpaceInsidePercentLiteralDelimiters:
+  VersionAdded: 0.41
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/SpaceInsideBrackets:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/SpaceInsideBlockBraces:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/SpaceInsideHashLiteralBraces:
+  VersionChanged: 0.41
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/SpaceInsideParens:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/SpaceInsideRangeLiteral:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/SpaceInsideStringInterpolation:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/Tab:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/TrailingBlankLines:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/TrailingWhitespace:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/FirstArrayElementLineBreak:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/FirstHashElementLineBreak:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/FirstMethodArgumentLineBreak:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/FirstMethodParameterLineBreak:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/MultilineAssignmentLayout:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/MethodCallParentheses:
+  VersionRemoved: 0.47
+  # renamed to MethodCallWithoutArgsParentheses
+
+Lint/Eval:
+  VersionRemoved: 0.47
+  # renamed to Security/Eval
+
+Lint/UselessArraySplat:
+  VersionAdded: 0.40
+  VersionRemoved: 0.43
+  # renamed to UnneededSplatExpansion
+
+Performance/PushSplat:
+  VersionAdded: 0.41
+  VersionRemoved: 0.43
+  #  it can produce code that is slower or even cause failure.
+
+Style/DeprecatedHashMethods:
+  VersionRemoved: 0.41
+  # renamed to PreferredHashMethods
+
+Style/Tab:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/TrailingBlankLines:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/TrailingWhitespace:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/FirstArrayElementLineBreak:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/FirstHashElementLineBreak:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/FirstMethodArgumentLineBreak:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/FirstMethodParameterLineBreak:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/MultilineAssignmentLayout:
+  VersionRemoved: 0.49
+  # Moved to Layout
+
+Style/MethodCallParentheses:
+  VersionRemoved: 0.47
+  # renamed to MethodCallWithoutArgsParentheses
+
+Lint/Eval:
+  VersionRemoved: 0.47
+  # renamed to Security/Eval
+
+Lint/UselessArraySplat:
+  VersionAdded: 0.40
+  VersionRemoved: 0.43
+  # renamed to UnneededSplatExpansion
+
+Performance/PushSplat:
+  VersionAdded: 0.41
+  VersionRemoved: 0.43
+  #  it can produce code that is slower or even cause failure.
+
+Style/DeprecatedHashMethods:
+  VersionRemoved: 0.41
+  # renamed to PreferredHashMethods

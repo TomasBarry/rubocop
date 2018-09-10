@@ -62,6 +62,7 @@ end
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.57` | Float
 EnforcedStyle | `group` | `inline`, `group`
 
 ## Style/Alias
@@ -101,6 +102,7 @@ alias_method :bar, :foo
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionChanged | `0.36` | Float
 EnforcedStyle | `prefer_alias` | `prefer_alias`, `prefer_alias_method`
 
 ### References
@@ -214,6 +216,7 @@ AllowedChars attribute (empty by default).
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionChanged | `0.52` | Float
 AllowedChars | `[]` | Array
 
 ### References
@@ -588,6 +591,7 @@ end
 
 Name | Default value | Configurable values
 --- | --- | ---
+SafeAutoCorrect | `false` | Boolean
 AutoCorrect | `false` | Boolean
 EnforcedStyle | `nested` | `nested`, `compact`
 
@@ -779,6 +783,12 @@ class Foo
   end
 end
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.52` | Float
 
 ### References
 
@@ -973,6 +983,12 @@ class X # :nodoc:
 end
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.51` | Float
+
 ## Style/ConditionalAssignment
 
 Enabled by default | Supports autocorrection
@@ -1084,6 +1100,8 @@ end
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.36` | Float
+VersionChanged | `0.47` | Float
 EnforcedStyle | `assign_to_condition` | `assign_to_condition`, `assign_inside_condition`
 SingleLineConditionsOnly | `true` | Boolean
 IncludeTernaryExpressions | `true` | Boolean
@@ -1117,7 +1135,7 @@ AutocorrectNotice | `` | String
 
 Enabled by default | Supports autocorrection
 --- | ---
-Disabled | No
+Enabled | No
 
 This cop checks for consistent usage of the `DateTime` class over the
 `Time` class. This cop is disabled by default since these classes,
@@ -1167,6 +1185,8 @@ something.to_time
 Name | Default value | Configurable values
 --- | --- | ---
 AllowCoercion | `false` | Boolean
+VersionAdded | `0.51` | Float
+VersionChanged | `0.59` | Float
 
 ### References
 
@@ -1236,6 +1256,12 @@ path = File.dirname(File.realpath(__FILE__))
 # good
 path = __dir__
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.5` | Float
 
 ## Style/Documentation
 
@@ -1330,6 +1356,7 @@ end
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.43` | Float
 Exclude | `spec/**/*`, `test/**/*` | Array
 RequireForNonPublicMethods | `false` | Boolean
 
@@ -1391,6 +1418,12 @@ This check only applies if the block takes no parameters.
 10.times {}
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.41` | Float
+
 ## Style/EachWithObject
 
 Enabled by default | Supports autocorrection
@@ -1413,6 +1446,12 @@ parameter is assigned to within the block.
 # good
 [1, 2].each_with_object({}) { |e, a| a[e] = e }
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionChanged | `0.42` | Float
 
 ## Style/EmptyBlockParameter
 
@@ -1441,6 +1480,12 @@ end
 # good
 a { do_something }
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.52` | Float
 
 ## Style/EmptyCaseCondition
 
@@ -1482,6 +1527,12 @@ else
   puts 'more'
 end
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.4` | Float
 
 ## Style/EmptyElse
 
@@ -1614,6 +1665,12 @@ redundant.
 -> (arg) { do_something(arg) }
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.52` | Float
+
 ## Style/EmptyLiteral
 
 Enabled by default | Supports autocorrection
@@ -1696,6 +1753,7 @@ end
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.46` | Float
 EnforcedStyle | `compact` | `compact`, `expanded`
 
 ### References
@@ -1718,6 +1776,12 @@ This cop checks ensures source files have no utf-8 encoding comments.
 # coding: UTF-8
 # -*- coding: UTF-8 -*-
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionChanged | `0.5` | Float
 
 ### References
 
@@ -1782,6 +1846,12 @@ C.class_eval <<-RUBY, __FILE__, __LINE__ + 1
   end
 RUBY
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.52` | Float
 
 ## Style/EvenOdd
 
@@ -1853,6 +1923,12 @@ Pathname.new(__FILE__).parent.expand_path
 # good
 Pathname.new(__dir__).expand_path
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.53` | Float
 
 ## Style/FlipFlop
 
@@ -1932,6 +2008,7 @@ end
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionChanged | `0.59` | Float
 EnforcedStyle | `each` | `each`, `for`
 
 ### References
@@ -1989,6 +2066,7 @@ puts '%10s' % 'hoge'
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionChanged | `0.49` | Float
 EnforcedStyle | `format` | `format`, `sprintf`, `percent`
 
 ### References
@@ -2048,6 +2126,8 @@ format('%s', 'Hello')
 Name | Default value | Configurable values
 --- | --- | ---
 EnforcedStyle | `annotated` | `annotated`, `template`, `unannotated`
+VersionAdded | `0.49` | Float
+VersionChanged | `0.52` | Float
 
 ## Style/FrozenStringLiteralComment
 
@@ -2120,6 +2200,8 @@ end
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.36` | Float
+VersionChanged | `0.47` | Float
 EnforcedStyle | `when_needed` | `when_needed`, `always`, `never`
 
 ## Style/GlobalVars
@@ -2284,6 +2366,7 @@ The supported styles are:
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionChanged | `0.43` | Float
 EnforcedStyle | `ruby19` | `ruby19`, `hash_rockets`, `no_mixed_keys`, `ruby19_no_mixed_keys`
 UseHashRocketsWithSymbolValues | `false` | Boolean
 PreferHashRocketsForNonAlnumEndingSymbols | `false` | Boolean
@@ -2361,6 +2444,12 @@ else
 end
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.36` | Float
+
 ## Style/IfInsideElse
 
 Enabled by default | Supports autocorrection
@@ -2394,6 +2483,12 @@ else
   action_c
 end
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.36` | Float
 
 ## Style/IfUnlessModifier
 
@@ -2455,6 +2550,12 @@ if running?
 end
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.39` | Float
+
 ## Style/IfWithSemicolon
 
 Enabled by default | Supports autocorrection
@@ -2497,6 +2598,12 @@ raise 'Error message here'
 # good
 raise ArgumentError, 'Error message here'
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.41` | Float
 
 ## Style/InfiniteLoop
 
@@ -2586,6 +2693,7 @@ foo == bar
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.48` | Float
 InverseMethods | `{:any?=>:none?, :even?=>:odd?, :===>:!=, :=~=>:!~, :<=>:>=, :>=>:<=}` | 
 InverseBlocks | `{:select=>:reject, :select!=>:reject!}` | 
 
@@ -2616,6 +2724,7 @@ ip_address = ENV['DEPLOYMENT_IP_ADDRESS']
 Name | Default value | Configurable values
 --- | --- | ---
 Whitelist | `::` | Array
+VersionAdded | `0.58` | Float
 
 ## Style/Lambda
 
@@ -2680,6 +2789,7 @@ f = ->(x) do
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionChanged | `0.4` | Float
 EnforcedStyle | `line_count_dependent` | `line_count_dependent`, `lambda`, `literal`
 
 ### References
@@ -2798,6 +2908,8 @@ end
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.47` | Float
+VersionChanged | `0.48` | Float
 IgnoreMacros | `true` | Boolean
 IgnoredMethods | `[]` | Array
 
@@ -2828,6 +2940,8 @@ object.some_method
 Name | Default value | Configurable values
 --- | --- | ---
 IgnoredMethods | `[]` | Array
+VersionAdded | `0.47` | Float
+VersionChanged | `0.55` | Float
 
 ### References
 
@@ -2987,6 +3101,12 @@ def method_missing(name, *args)
 end
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.56` | Float
+
 ### References
 
 * [https://github.com/rubocop-hq/ruby-style-guide#no-method-missing](https://github.com/rubocop-hq/ruby-style-guide#no-method-missing)
@@ -3010,6 +3130,12 @@ return foo.min, foo.max
 bar = foo.minmax
 return foo.minmax
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.5` | Float
 
 ## Style/MissingElse
 
@@ -3121,6 +3247,7 @@ end
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionChanged | `0.38` | Float
 EnforcedStyle | `both` | `if`, `case`, `both`
 
 ## Style/MissingRespondToMissing
@@ -3149,6 +3276,12 @@ def method_missing(name, *args)
   # ...
 end
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.56` | Float
 
 ### References
 
@@ -3199,6 +3332,8 @@ end
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.48` | Float
+VersionChanged | `0.49` | Float
 EnforcedStyle | `separated` | `separated`, `grouped`
 
 ### References
@@ -3252,6 +3387,12 @@ class C
 end
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.51` | Float
+
 ## Style/ModuleFunction
 
 Enabled by default | Supports autocorrection
@@ -3304,6 +3445,7 @@ end
 Name | Default value | Configurable values
 --- | --- | ---
 EnforcedStyle | `module_function` | `module_function`, `extend_self`
+VersionChanged | `0.53` | Float
 
 ### References
 
@@ -3351,6 +3493,12 @@ Checks for uses of if/unless modifiers with multiple-lines bodies.
 # good
 { result: 'ok' } if cond
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.45` | Float
 
 ### References
 
@@ -3429,6 +3577,8 @@ foo ||= (
 Name | Default value | Configurable values
 --- | --- | ---
 EnforcedStyle | `keyword` | `keyword`, `braces`
+VersionAdded | `0.44` | Float
+VersionChanged | `0.48` | Float
 
 ## Style/MultilineMethodSignature
 
@@ -3452,6 +3602,12 @@ def foo(bar,
         baz)
 end
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.59` | Float
 
 ## Style/MultilineTernaryOperator
 
@@ -3507,6 +3663,12 @@ foo if a == 'a' || a == 'b' || a == 'c'
 a = 'a'
 foo if ['a', 'b', 'c'].include?(a)
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.49` | Float
 
 ## Style/MutableConstant
 
@@ -3618,6 +3780,7 @@ end
 Name | Default value | Configurable values
 --- | --- | ---
 EnforcedStyle | `both` | `both`, `prefix`, `postfix`
+VersionChanged | `0.48` | Float
 
 ### References
 
@@ -3702,6 +3865,8 @@ method1(method2 arg, method3, arg)
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.36` | Float
+VersionChanged | `0.5` | Float
 Whitelist | `be`, `be_a`, `be_an`, `be_between`, `be_falsey`, `be_kind_of`, `be_instance_of`, `be_truthy`, `be_within`, `eq`, `eql`, `end_with`, `include`, `match`, `raise_error`, `respond_to`, `start_with` | Array
 
 ## Style/NestedTernaryOperator
@@ -3838,6 +4003,7 @@ end
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionChanged | `0.59` | Float
 EnforcedStyle | `predicate` | `predicate`, `comparison`
 
 ### References
@@ -3956,6 +4122,7 @@ num = 01234
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.41` | Float
 EnforcedOctalStyle | `zero_with_o` | `zero_with_o`, `zero_only`
 
 ### References
@@ -3994,6 +4161,7 @@ of digits in them.
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionChanged | `0.48` | Float
 MinDigits | `5` | Integer
 Strict | `false` | Boolean
 
@@ -4057,7 +4225,9 @@ bar.baz > 0
 
 Name | Default value | Configurable values
 --- | --- | ---
+SafeAutocorrect | `false` | Boolean
 AutoCorrect | `false` | Boolean
+VersionChanged | `0.59` | Float
 EnforcedStyle | `predicate` | `predicate`, `comparison`
 IgnoredMethods | `[]` | Array
 Exclude | `spec/**/*` | Array
@@ -4094,6 +4264,12 @@ else
   doo
 end
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionChanged | `0.38` | Float
 
 ### References
 
@@ -4190,6 +4366,12 @@ name = 'Bozhidar' unless name
 name ||= 'Bozhidar'
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.5` | Float
+
 ### References
 
 * [https://github.com/rubocop-hq/ruby-style-guide#double-pipe-for-uninit](https://github.com/rubocop-hq/ruby-style-guide#double-pipe-for-uninit)
@@ -4279,6 +4461,7 @@ end
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionChanged | `0.56` | Float
 AllowSafeAssignment | `true` | Boolean
 AllowInMultilineConditions | `false` | Boolean
 
@@ -4321,6 +4504,7 @@ default.
 Name | Default value | Configurable values
 --- | --- | ---
 PreferredDelimiters | `{"default"=>"()", "%i"=>"[]", "%I"=>"[]", "%r"=>"{}", "%w"=>"[]", "%W"=>"[]"}` | 
+VersionChanged | `0.48.1` | String
 
 ### References
 
@@ -4431,6 +4615,8 @@ Hash#has_value?
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.41` | Float
+VersionChanged | `0.44` | Float
 EnforcedStyle | `short` | `short`, `verbose`
 
 ### References
@@ -4507,6 +4693,7 @@ fail "message"
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionChanged | `0.4` | Float
 EnforcedStyle | `exploded` | `compact`, `exploded`
 
 ### References
@@ -4542,6 +4729,12 @@ rand(0..5) + 1
 rand(1..6)
 rand(1...7)
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.52` | Float
 
 ### References
 
@@ -4642,6 +4835,12 @@ x == y ? false : true
 x != y
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.5` | Float
+
 ## Style/RedundantException
 
 Enabled by default | Supports autocorrection
@@ -4704,6 +4903,12 @@ This cop checks for redundant parentheses.
 # good
 x if y.z.nil?
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.36` | Float
 
 ## Style/RedundantReturn
 
@@ -5028,6 +5233,7 @@ end
 Name | Default value | Configurable values
 --- | --- | ---
 EnforcedStyle | `explicit` | `implicit`, `explicit`
+VersionAdded | `0.52` | Float
 
 ## Style/ReturnNil
 
@@ -5073,6 +5279,7 @@ end
 Name | Default value | Configurable values
 --- | --- | ---
 EnforcedStyle | `return` | `return`, `return_nil`
+VersionAdded | `0.5` | Float
 
 ## Style/SafeNavigation
 
@@ -5143,6 +5350,8 @@ foo.bar > 2 if foo
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.43` | Float
+VersionChanged | `0.56` | Float
 ConvertCodeThatCanStartToReturnNil | `false` | Boolean
 Whitelist | `present?`, `blank?`, `presence`, `try`, `try!` | Array
 
@@ -5345,6 +5554,7 @@ explicit_receiver.raise
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionChanged | `0.37` | Float
 EnforcedStyle | `only_raise` | `only_raise`, `only_fail`, `semantic`
 
 ### References
@@ -5392,6 +5602,7 @@ end
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionChanged | `0.47` | Float
 Methods | `{"reduce"=>["acc", "elem"]}`, `{"inject"=>["acc", "elem"]}` | Array
 
 ## Style/SingleLineMethods
@@ -5496,6 +5707,7 @@ puts $+
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionChanged | `0.36` | Float
 EnforcedStyle | `use_english_names` | `use_perl_names`, `use_english_names`
 
 ### References
@@ -5562,6 +5774,12 @@ $stderr.puts('hello')
 warn('hello')
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.51` | Float
+
 ### References
 
 * [https://github.com/rubocop-hq/ruby-style-guide#warn](https://github.com/rubocop-hq/ruby-style-guide#warn)
@@ -5584,6 +5802,12 @@ symbols is preferred instead.
 # good
 { one: 1, two: 2, three: 3 }
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.52` | Float
 
 ### References
 
@@ -5630,6 +5854,7 @@ Checks if uses of quotes match the configured preference.
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionChanged | `0.36` | Float
 EnforcedStyle | `single_quotes` | `single_quotes`, `double_quotes`
 ConsistentQuotesInMultiline | `false` | Boolean
 
@@ -5767,6 +5992,7 @@ Name | Default value | Configurable values
 --- | --- | ---
 EnforcedStyle | `percent` | `percent`, `brackets`
 MinSize | `2` | Integer
+VersionChanged | `0.49` | Float
 
 ### References
 
@@ -5812,6 +6038,7 @@ something.map(&:upcase)
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionChanged | `0.4` | Float
 IgnoredMethods | `respond_to`, `define_method` | Array
 
 ## Style/TernaryParentheses
@@ -5871,6 +6098,8 @@ foo = (bar && baz) ? a : b
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.42` | Float
+VersionChanged | `0.46` | Float
 EnforcedStyle | `require_no_parentheses` | `require_parentheses`, `require_no_parentheses`, `require_parentheses_when_complex`
 AllowSafeAssignment | `true` | Boolean
 
@@ -5894,6 +6123,12 @@ class Foo
   def foo; end
 end
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.53` | Float
 
 ## Style/TrailingBodyOnMethodDefinition
 
@@ -5925,6 +6160,12 @@ def f(x)
 end
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.52` | Float
+
 ## Style/TrailingBodyOnModule
 
 Enabled by default | Supports autocorrection
@@ -5945,6 +6186,12 @@ module Foo
   extend self
 end
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.53` | Float
 
 ## Style/TrailingCommaInArguments
 
@@ -6067,6 +6314,7 @@ a = [
 Name | Default value | Configurable values
 --- | --- | ---
 EnforcedStyleForMultiline | `no_comma` | `comma`, `consistent_comma`, `no_comma`
+VersionAdded | `0.53` | Float
 
 ### References
 
@@ -6130,6 +6378,7 @@ a = {
 Name | Default value | Configurable values
 --- | --- | ---
 EnforcedStyleForMultiline | `no_comma` | `comma`, `consistent_comma`, `no_comma`
+VersionAdded | `0.53` | Float
 
 ## Style/TrailingMethodEndStatement
 
@@ -6169,6 +6418,12 @@ def foo
   end
 end
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.52` | Float
 
 ## Style/TrailingUnderscoreVariable
 
@@ -6243,6 +6498,7 @@ end
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionChanged | `0.38` | Float
 ExactNameMatch | `true` | Boolean
 AllowPredicates | `true` | Boolean
 AllowDSLWriters | `false` | Boolean
@@ -6340,6 +6596,12 @@ elsif cond
 end
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.57` | Float
+
 ## Style/UnneededInterpolation
 
 Enabled by default | Supports autocorrection
@@ -6360,6 +6622,12 @@ This cop checks for strings that are just an interpolated expression.
 # good if @var is already a String
 @var
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.36` | Float
 
 ## Style/UnneededPercentQ
 
@@ -6408,6 +6676,12 @@ which can be replaced with the shorter method `unpack1`.
 # good
 'foo'.unpack1('h*')
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.54` | Float
 
 ## Style/VariableInterpolation
 
@@ -6577,6 +6851,7 @@ array of 2 or fewer elements.
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionChanged | `0.36` | Float
 EnforcedStyle | `percent` | `percent`, `brackets`
 MinSize | `2` | Integer
 WordRegex | `(?-mix:\A[\p{Word}\n\t]+\z)` | 
@@ -6629,6 +6904,8 @@ bar > 10
 Name | Default value | Configurable values
 --- | --- | ---
 EnforcedStyle | `all_comparison_operators` | `all_comparison_operators`, `equality_operators_only`
+VersionAdded | `0.49` | Float
+VersionChanged | `0.5` | Float
 
 ### References
 
@@ -6665,3 +6942,10 @@ array.empty?
 !string.empty?
 !hash.empty?
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.37` | Float
+VersionChanged | `0.39` | Float

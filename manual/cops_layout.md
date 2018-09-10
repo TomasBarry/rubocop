@@ -46,6 +46,7 @@ end
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.49` | Float
 EnforcedStyle | `indent` | `outdent`, `indent`
 IndentationWidth | `<none>` | Integer
 
@@ -79,6 +80,12 @@ a = ['run',
      'forrest',
      'run']
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.49` | Float
 
 ### References
 
@@ -325,6 +332,7 @@ foo :bar,
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.49` | Float
 EnforcedStyle | `with_first_parameter` | `with_first_parameter`, `with_fixed_indentation`
 IndentationWidth | `<none>` | Integer
 
@@ -411,6 +419,7 @@ end
 Name | Default value | Configurable values
 --- | --- | ---
 EnforcedStyleAlignWith | `either` | `either`, `start_of_block`, `start_of_line`
+VersionAdded | `0.53` | Float
 
 ## Layout/BlockEndNewline
 
@@ -442,6 +451,12 @@ blah { |i|
   foo(i)
 }
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.49` | Float
 
 ## Layout/CaseIndentation
 
@@ -525,6 +540,7 @@ end
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.49` | Float
 EnforcedStyle | `case` | `case`, `end`
 IndentOneStep | `false` | Boolean
 IndentationWidth | `<none>` | Integer
@@ -648,6 +664,7 @@ Name | Default value | Configurable values
 --- | --- | ---
 Categories | `{"module_inclusion"=>["include", "prepend", "extend"]}` | 
 ExpectedOrder | `module_inclusion`, `constants`, `public_class_methods`, `initializer`, `public_methods`, `protected_methods`, `private_methods` | Array
+VersionAdded | `0.52` | Float
 
 ### References
 
@@ -702,6 +719,12 @@ foo arg,
       Hi
     EOS
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.57` | Float
 
 ## Layout/ClosingParenthesisIndentation
 
@@ -775,6 +798,12 @@ some_method(a,
 )
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.49` | Float
+
 ## Layout/CommentIndentation
 
 Enabled by default | Supports autocorrection
@@ -813,6 +842,12 @@ if true
 end
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.49` | Float
+
 ## Layout/ConditionPosition
 
 Enabled by default | Supports autocorrection
@@ -839,6 +874,12 @@ if some_condition
   do_something
 end
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.53` | Float
 
 ### References
 
@@ -895,6 +936,7 @@ Name | Default value | Configurable values
 EnforcedStyleAlignWith | `start_of_line` | `start_of_line`, `def`
 AutoCorrect | `false` | Boolean
 Severity | `warning` | String
+VersionAdded | `0.53` | Float
 
 ## Layout/DotPosition
 
@@ -933,6 +975,7 @@ something.
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.49` | Float
 EnforcedStyle | `leading` | `leading`, `trailing`
 
 ### References
@@ -974,6 +1017,12 @@ else
   code
 end
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.49` | Float
 
 ## Layout/EmptyComment
 
@@ -1055,6 +1104,7 @@ Name | Default value | Configurable values
 --- | --- | ---
 AllowBorderComment | `true` | Boolean
 AllowMarginComment | `true` | Boolean
+VersionAdded | `0.53` | Float
 
 ## Layout/EmptyLineAfterGuardClause
 
@@ -1097,6 +1147,13 @@ def foo
 end
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.56` | Float
+VersionChanged | `0.59` | Float
+
 ## Layout/EmptyLineAfterMagicComment
 
 Enabled by default | Supports autocorrection
@@ -1123,6 +1180,12 @@ class Person
   # Some code
 end
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.49` | Float
 
 ### References
 
@@ -1166,6 +1229,7 @@ end
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.49` | Float
 AllowAdjacentOneLineDefs | `false` | Boolean
 NumberOfEmptyLines | `1` | Integer
 
@@ -1195,6 +1259,12 @@ some_method
 # one empty line
 some_method
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.49` | Float
 
 ### References
 
@@ -1227,6 +1297,12 @@ class Foo
   def baz; end
 end
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.49` | Float
 
 ### References
 
@@ -1276,6 +1352,12 @@ some_method(
 )
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.52` | Float
+
 ## Layout/EmptyLinesAroundBeginBody
 
 Enabled by default | Supports autocorrection
@@ -1302,6 +1384,12 @@ begin
 
 end
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.49` | Float
 
 ### References
 
@@ -1343,6 +1431,7 @@ end
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.49` | Float
 EnforcedStyle | `no_empty_lines` | `empty_lines`, `no_empty_lines`
 
 ### References
@@ -1436,6 +1525,8 @@ end
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.49` | Float
+VersionChanged | `0.53` | Float
 EnforcedStyle | `no_empty_lines` | `empty_lines`, `empty_lines_except_namespace`, `empty_lines_special`, `no_empty_lines`, `beginning_only`, `ending_only`
 
 ### References
@@ -1506,6 +1597,12 @@ rescue
 end
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.49` | Float
+
 ### References
 
 * [https://github.com/rubocop-hq/ruby-style-guide#empty-lines-around-bodies](https://github.com/rubocop-hq/ruby-style-guide#empty-lines-around-bodies)
@@ -1535,6 +1632,12 @@ def bar
 
 end
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.49` | Float
 
 ### References
 
@@ -1603,6 +1706,7 @@ end
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.49` | Float
 EnforcedStyle | `no_empty_lines` | `empty_lines`, `empty_lines_except_namespace`, `empty_lines_special`, `no_empty_lines`
 
 ### References
@@ -1693,6 +1797,7 @@ variable =
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.53` | Float
 EnforcedStyleAlignWith | `keyword` | `keyword`, `variable`, `start_of_line`
 AutoCorrect | `false` | Boolean
 Severity | `warning` | String
@@ -1750,6 +1855,7 @@ puts 'Hello' # Return character is CR+LF on all platfoms.
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.49` | Float
 EnforcedStyle | `native` | `native`, `lf`, `crlf`
 
 ### References
@@ -1783,6 +1889,7 @@ website  = "https://github.com/rubocop-hq/rubocop"
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.49` | Float
 AllowForAlignment | `true` | Boolean
 ForceEqualSignAlignment | `false` | Boolean
 
@@ -1808,6 +1915,12 @@ multi-line array.
   :b]
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.49` | Float
+
 ## Layout/FirstHashElementLineBreak
 
 Enabled by default | Supports autocorrection
@@ -1829,6 +1942,12 @@ multi-line hash.
   a: 1,
   b: 2 }
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.49` | Float
 
 ## Layout/FirstMethodArgumentLineBreak
 
@@ -1855,6 +1974,12 @@ method(
 method foo, bar,
   baz
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.49` | Float
 
 ## Layout/FirstMethodParameterLineBreak
 
@@ -1887,6 +2012,12 @@ def method foo,
   do_something
 end
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.49` | Float
 
 ## Layout/FirstParameterIndentation
 
@@ -2043,6 +2174,8 @@ second_param
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.49` | Float
+VersionChanged | `0.56` | Float
 EnforcedStyle | `special_for_inner_method_call_in_parentheses` | `consistent`, `consistent_relative_to_receiver`, `special_for_inner_method_call`, `special_for_inner_method_call_in_parentheses`
 IndentationWidth | `<none>` | Integer
 
@@ -2142,6 +2275,7 @@ and_now_for_something = [
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.49` | Float
 EnforcedStyle | `special_inside_parentheses` | `special_inside_parentheses`, `consistent`, `align_brackets`
 IndentationWidth | `<none>` | Integer
 
@@ -2177,6 +2311,7 @@ value =
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.49` | Float
 IndentationWidth | `<none>` | Integer
 
 ## Layout/IndentHash
@@ -2273,6 +2408,7 @@ and_now_for_something = {
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.49` | Float
 EnforcedStyle | `special_inside_parentheses` | `special_inside_parentheses`, `consistent`, `align_braces`
 IndentationWidth | `<none>` | Integer
 
@@ -2364,6 +2500,7 @@ RUBY
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.49` | Float
 EnforcedStyle | `auto_detection` | `auto_detection`, `squiggly`, `active_support`, `powerpack`, `unindent`
 
 ### References
@@ -2502,6 +2639,7 @@ end
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.49` | Float
 EnforcedStyle | `normal` | `normal`, `rails`
 
 ### References
@@ -2563,6 +2701,7 @@ end
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.49` | Float
 Width | `2` | Integer
 IgnoredPatterns | `[]` | Array
 
@@ -2592,6 +2731,12 @@ class A
   def foo; end
 end
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.49` | Float
 
 ## Layout/LeadingBlankLines
 
@@ -2626,6 +2771,12 @@ end
 # a comment
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.57` | Float
+
 ## Layout/LeadingCommentSpace
 
 Enabled by default | Supports autocorrection
@@ -2647,6 +2798,12 @@ or rackup options.
 # good
 # Some comment
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.49` | Float
 
 ### References
 
@@ -2757,6 +2914,7 @@ line as the last element of the array.
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.49` | Float
 EnforcedStyle | `symmetrical` | `symmetrical`, `new_line`, `same_line`
 
 ## Layout/MultilineAssignmentLayout
@@ -2805,6 +2963,7 @@ end
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.49` | Float
 EnforcedStyle | `new_line` | `same_line`, `new_line`
 
 ### References
@@ -2852,6 +3011,12 @@ blah { |i|
   bar(i)
 }
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.49` | Float
 
 ## Layout/MultilineHashBraceLayout
 
@@ -2957,6 +3122,7 @@ line as the last element of the hash.
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.49` | Float
 EnforcedStyle | `symmetrical` | `symmetrical`, `new_line`, `same_line`
 
 ## Layout/MultilineMethodCallBraceLayout
@@ -3064,6 +3230,7 @@ foo(a,
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.49` | Float
 EnforcedStyle | `symmetrical` | `symmetrical`, `new_line`, `same_line`
 
 ## Layout/MultilineMethodCallIndentation
@@ -3129,6 +3296,7 @@ myvariable = Thing
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.49` | Float
 EnforcedStyle | `aligned` | `aligned`, `indented`, `indented_relative_to_receiver`
 IndentationWidth | `<none>` | Integer
 
@@ -3249,6 +3417,7 @@ end
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.49` | Float
 EnforcedStyle | `symmetrical` | `symmetrical`, `new_line`, `same_line`
 
 ## Layout/MultilineOperationIndentation
@@ -3297,6 +3466,7 @@ end
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.49` | Float
 EnforcedStyle | `aligned` | `aligned`, `indented`
 IndentationWidth | `<none>` | Integer
 
@@ -3327,6 +3497,12 @@ rescue
 end
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.49` | Float
+
 ## Layout/SpaceAfterColon
 
 Enabled by default | Supports autocorrection
@@ -3346,6 +3522,12 @@ def f(a:, b:2); {a:3}; end
 # good
 def f(a:, b: 2); {a: 3}; end
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.49` | Float
 
 ### References
 
@@ -3371,6 +3553,12 @@ Checks for comma (,) not followed by some kind of space.
 { foo:bar, }
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.49` | Float
+
 ### References
 
 * [https://github.com/rubocop-hq/ruby-style-guide#spaces-operators](https://github.com/rubocop-hq/ruby-style-guide#spaces-operators)
@@ -3395,6 +3583,12 @@ def func(x) end
 def method=(y) end
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.49` | Float
+
 ### References
 
 * [https://github.com/rubocop-hq/ruby-style-guide#parens-no-spaces](https://github.com/rubocop-hq/ruby-style-guide#parens-no-spaces)
@@ -3417,6 +3611,12 @@ This cop checks for space after `!`.
 !something
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.49` | Float
+
 ### References
 
 * [https://github.com/rubocop-hq/ruby-style-guide#no-space-bang](https://github.com/rubocop-hq/ruby-style-guide#no-space-bang)
@@ -3438,6 +3638,12 @@ x = 1;y = 2
 # good
 x = 1; y = 2
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.49` | Float
 
 ### References
 
@@ -3480,6 +3686,7 @@ Checks the spacing inside and after block parameters pipes.
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.49` | Float
 EnforcedStyleInsidePipes | `no_space` | `space`, `no_space`
 
 ## Layout/SpaceAroundEqualsInParameterDefault
@@ -3524,6 +3731,7 @@ end
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.49` | Float
 EnforcedStyle | `space` | `space`, `no_space`
 
 ### References
@@ -3560,6 +3768,12 @@ end
 something = 123 if test
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.49` | Float
+
 ## Layout/SpaceAroundOperators
 
 Enabled by default | Supports autocorrection
@@ -3589,6 +3803,7 @@ a**b
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.49` | Float
 AllowForAlignment | `true` | Boolean
 
 ### References
@@ -3637,8 +3852,10 @@ foo.map{ |a|
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.49` | Float
 EnforcedStyle | `space` | `space`, `no_space`
 EnforcedStyleForEmptyBraces | `space` | `space`, `no_space`
+VersionChanged | `0.52.1` | String
 
 ## Layout/SpaceBeforeComma
 
@@ -3662,6 +3879,12 @@ a(1, 2)
 each { |a, b| }
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.49` | Float
+
 ## Layout/SpaceBeforeComment
 
 Enabled by default | Supports autocorrection
@@ -3680,6 +3903,12 @@ same line.
 # good
 1 + 1 # this operation does ...
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.49` | Float
 
 ## Layout/SpaceBeforeFirstArg
 
@@ -3712,6 +3941,7 @@ something 'hello'
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.49` | Float
 AllowForAlignment | `true` | Boolean
 
 ## Layout/SpaceBeforeSemicolon
@@ -3731,6 +3961,12 @@ x = 1 ; y = 2
 # good
 x = 1; y = 2
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.49` | Float
 
 ## Layout/SpaceInLambdaLiteral
 
@@ -3766,6 +4002,7 @@ a = -> (x, y) { x + y }
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.49` | Float
 EnforcedStyle | `require_no_space` | `require_no_space`, `require_space`
 
 ## Layout/SpaceInsideArrayLiteralBrackets
@@ -3851,6 +4088,7 @@ Name | Default value | Configurable values
 --- | --- | ---
 EnforcedStyle | `no_space` | `space`, `no_space`, `compact`
 EnforcedStyleForEmptyBrackets | `no_space` | `space`, `no_space`
+VersionAdded | `0.52` | Float
 
 ## Layout/SpaceInsideArrayPercentLiteral
 
@@ -3869,6 +4107,12 @@ Checks for unnecessary additional spaces inside array percent literals
 # good
 %i(foo bar baz)
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.49` | Float
 
 ## Layout/SpaceInsideBlockBraces
 
@@ -3966,6 +4210,7 @@ some_array.each {   }
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.49` | Float
 EnforcedStyle | `space` | `space`, `no_space`
 EnforcedStyleForEmptyBraces | `no_space` | `space`, `no_space`
 SpaceBeforeBlockParameters | `true` | Boolean
@@ -4051,6 +4296,7 @@ foo = {     }
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.49` | Float
 EnforcedStyle | `space` | `space`, `no_space`, `compact`
 EnforcedStyleForEmptyBraces | `no_space` | `space`, `no_space`
 
@@ -4103,6 +4349,8 @@ y()
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.49` | Float
+VersionChanged | `0.55` | Float
 EnforcedStyle | `no_space` | `space`, `no_space`
 
 ### References
@@ -4131,6 +4379,12 @@ Checks for unnecessary additional spaces inside the delimiters of
 %x(  ls -l )
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.49` | Float
+
 ## Layout/SpaceInsideRangeLiteral
 
 Enabled by default | Supports autocorrection
@@ -4154,6 +4408,12 @@ Checks for spaces inside range literals.
 # good
 'a'..'z'
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.49` | Float
 
 ### References
 
@@ -4229,6 +4489,8 @@ foo[ ]
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.52` | Float
+VersionChanged | `0.53` | Float
 EnforcedStyle | `no_space` | `space`, `no_space`
 EnforcedStyleForEmptyBrackets | `no_space` | `space`, `no_space`
 
@@ -4265,6 +4527,7 @@ This cop checks for whitespace within string interpolations.
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.49` | Float
 EnforcedStyle | `no_space` | `space`, `no_space`
 
 ### References
@@ -4299,6 +4562,8 @@ end
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.49` | Float
+VersionChanged | `0.51` | Float
 IndentationWidth | `<none>` | Integer
 
 ### References
@@ -4356,6 +4621,7 @@ class Foo; end
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.49` | Float
 EnforcedStyle | `final_newline` | `final_newline`, `final_blank_line`
 
 ### References
@@ -4386,6 +4652,8 @@ x = 0
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionChanged | `0.55` | Float
+VersionAdded | `0.49` | Float
 AllowInHeredoc | `false` | Boolean
 
 ### References

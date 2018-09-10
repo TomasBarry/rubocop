@@ -69,6 +69,12 @@ Book.update_attributes!(author: 'Alice')
 Book.update!(author: 'Alice')
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.53` | Float
+
 ## Rails/ActiveSupportAliases
 
 Enabled by default | Supports autocorrection
@@ -94,6 +100,12 @@ are not used.
 [1, 2, 'a'].prepend('b')
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.48` | Float
+
 ## Rails/ApplicationJob
 
 Enabled by default | Supports autocorrection
@@ -116,6 +128,12 @@ class Rails4Job < ActiveJob::Base
 end
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.49` | Float
+
 ## Rails/ApplicationRecord
 
 Enabled by default | Supports autocorrection
@@ -137,6 +155,12 @@ class Rails4Model < ActiveRecord::Base
   # ...
 end
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.49` | Float
 
 ## Rails/AssertNot
 
@@ -161,6 +185,7 @@ assert_not x
 Name | Default value | Configurable values
 --- | --- | ---
 Include | `**/test/**/*` | Array
+VersionAdded | `0.56` | Float
 
 ## Rails/Blank
 
@@ -222,6 +247,7 @@ end
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.48` | Float
 NilOrEmpty | `true` | Boolean
 NotPresent | `true` | Boolean
 UnlessPresent | `true` | Boolean
@@ -301,6 +327,7 @@ Name | Default value | Configurable values
 --- | --- | ---
 Database | `<none>` | `mysql`, `postgresql`
 Include | `db/migrate/*.rb` | Array
+VersionAdded | `0.57` | Float
 
 ## Rails/CreateTableWithTimestamps
 
@@ -354,6 +381,7 @@ end
 Name | Default value | Configurable values
 --- | --- | ---
 Include | `db/migrate/*.rb` | Array
+VersionAdded | `0.52` | Float
 
 ## Rails/Date
 
@@ -479,6 +507,7 @@ delegate :bar, to: :foo, prefix: true
 Name | Default value | Configurable values
 --- | --- | ---
 EnforceForPrefixed | `true` | Boolean
+VersionChanged | `0.5` | Float
 
 ## Rails/DelegateAllowBlank
 
@@ -499,6 +528,12 @@ delegate :foo, to: :bar, allow_blank: true
 # good
 delegate :foo, to: :bar, allow_nil: true
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.44` | Float
 
 ## Rails/DynamicFindBy
 
@@ -536,6 +571,7 @@ User.find_by!(email: email)
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.44` | Float
 Whitelist | `find_by_sql` | Array
 
 ### References
@@ -570,6 +606,7 @@ enum status: [:active, :archived]
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.46` | Float
 Include | `app/models/**/*.rb` | Array
 
 ## Rails/EnvironmentComparison
@@ -593,6 +630,12 @@ Rails.env == :test
 # good
 Rails.env.production?
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.52` | Float
 
 ## Rails/Exit
 
@@ -628,6 +671,7 @@ raise 'a bad error has happened'
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.41` | Float
 Include | `app/**/*.rb`, `config/**/*.rb`, `lib/**/*.rb` | Array
 Exclude | `lib/**/*.rake` | Array
 
@@ -670,6 +714,8 @@ Rails.root.join('app/models/goober')
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.47` | Float
+VersionChanged | `0.57` | Float
 EnforcedStyle | `arguments` | `slashes`, `arguments`
 
 ## Rails/FindBy
@@ -791,6 +837,7 @@ end
 Name | Default value | Configurable values
 --- | --- | ---
 Include | `app/models/**/*.rb` | Array
+VersionAdded | `0.5` | Float
 
 ### References
 
@@ -823,6 +870,7 @@ get :new, params: { user_id: 1 }
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.44` | Float
 Include | `spec/**/*`, `test/**/*` | Array
 
 ## Rails/HttpStatus
@@ -871,6 +919,7 @@ redirect_to root_url, status: 301
 Name | Default value | Configurable values
 --- | --- | ---
 EnforcedStyle | `symbolic` | `numeric`, `symbolic`
+VersionAdded | `0.54` | Float
 
 ## Rails/InverseOf
 
@@ -1011,6 +1060,7 @@ end
 Name | Default value | Configurable values
 --- | --- | ---
 Include | `app/models/**/*.rb` | Array
+VersionAdded | `0.52` | Float
 
 ## Rails/LexicallyScopedActionFilter
 
@@ -1080,6 +1130,7 @@ end
 Name | Default value | Configurable values
 --- | --- | ---
 Include | `app/controllers/**/*.rb` | Array
+VersionAdded | `0.52` | Float
 
 ### References
 
@@ -1112,6 +1163,7 @@ add_reference :products, :category, null: false, default: 1
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.43` | Float
 Include | `db/migrate/*.rb` | Array
 
 ## Rails/Output
@@ -1209,6 +1261,12 @@ safe_join([user_content, " ", content_tag(:span, user_content)])
 #    "&lt;b&gt;hi&lt;/b&gt; <span>&lt;b&gt;hi&lt;/b&gt;</span>"
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.41` | Float
+
 ## Rails/PluralizationGrammar
 
 Enabled by default | Supports autocorrection
@@ -1274,6 +1332,12 @@ a.blank? ? b : a
 a.presence || b
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.52` | Float
+
 ## Rails/Present
 
 Enabled by default | Supports autocorrection
@@ -1331,6 +1395,7 @@ something if foo.present?
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.48` | Float
 NotNilAndNotEmpty | `true` | Boolean
 NotBlank | `true` | Boolean
 UnlessBlank | `true` | Boolean
@@ -1434,6 +1499,12 @@ with_options options: false do |merger|
 end
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.52` | Float
+
 ## Rails/RefuteMethods
 
 Enabled by default | Supports autocorrection
@@ -1461,6 +1532,7 @@ assert_not_equal true, false
 Name | Default value | Configurable values
 --- | --- | ---
 Include | `**/test/**/*` | Array
+VersionAdded | `0.56` | Float
 
 ## Rails/RelativeDateConstant
 
@@ -1491,6 +1563,8 @@ end
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.48` | Float
+VersionChanged | `0.59` | Float
 AutoCorrect | `false` | Boolean
 
 ## Rails/RequestReferer
@@ -1527,6 +1601,7 @@ request.referrer
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.41` | Float
 EnforcedStyle | `referer` | `referer`, `referrer`
 
 ## Rails/ReversibleMigration
@@ -1663,6 +1738,7 @@ end
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.47` | Float
 Include | `db/migrate/*.rb` | Array
 
 ### References
@@ -1719,6 +1795,7 @@ target Ruby version is set to 2.3+
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.43` | Float
 ConvertTry | `false` | Boolean
 
 ## Rails/SaveBang
@@ -1829,6 +1906,8 @@ Service::Mailer::update
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.42` | Float
+VersionChanged | `0.59` | Float
 AllowImplicitReturn | `true` | Boolean
 AllowedReceivers | `[]` | Array
 
@@ -1895,6 +1974,7 @@ FileUtils.touch('file')
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.47` | Float
 Blacklist | `decrement!`, `decrement_counter`, `increment!`, `increment_counter`, `toggle!`, `touch`, `update_all`, `update_attribute`, `update_column`, `update_columns`, `update_counters` | Array
 
 ### References
@@ -2022,6 +2102,8 @@ Model.uniq.pluck(:id)
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.4` | Float
+VersionChanged | `0.47` | Float
 EnforcedStyle | `conservative` | `conservative`, `aggressive`
 AutoCorrect | `false` | Boolean
 
@@ -2048,6 +2130,7 @@ Rails.env.production?
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.51` | Float
 Environments | `development`, `test`, `production` | Array
 
 ## Rails/Validation
@@ -2090,4 +2173,5 @@ validates :foo, uniqueness: true
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionChanged | `0.41` | Float
 Include | `app/models/**/*.rb` | Array

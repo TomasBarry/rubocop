@@ -25,6 +25,12 @@ caller_locations(2..2).first
 caller_locations(1..1).first
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.49` | Float
+
 ## Performance/CaseWhenSplat
 
 Enabled by default | Supports autocorrection
@@ -90,6 +96,7 @@ end
 Name | Default value | Configurable values
 --- | --- | ---
 AutoCorrect | `false` | Boolean
+VersionChanged | `0.59` | Float
 
 ## Performance/Casecmp
 
@@ -145,6 +152,12 @@ array.flatten!
 array.map! { |x| x.downcase }
 array
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.59` | Float
 
 ### References
 
@@ -229,6 +242,7 @@ Model.select(:value).count
 Name | Default value | Configurable values
 --- | --- | ---
 SafeMode | `true` | Boolean
+VersionChanged | `0.39` | Float
 
 ## Performance/Detect
 
@@ -264,6 +278,7 @@ considered unsafe.
 Name | Default value | Configurable values
 --- | --- | ---
 SafeMode | `true` | Boolean
+VersionChanged | `0.39` | Float
 
 ### References
 
@@ -297,6 +312,8 @@ str.end_with?(var1, var2)
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.36` | Float
+VersionChanged | `0.48` | Float
 IncludeActiveSupportAliases | `false` | Boolean
 
 ## Performance/EndWith
@@ -324,7 +341,10 @@ would suffice.
 
 Name | Default value | Configurable values
 --- | --- | ---
+SafeAutoCorrect | `false` | Boolean
 AutoCorrect | `false` | Boolean
+VersionAdded | `0.36` | Float
+VersionChanged | `0.44` | Float
 
 ### References
 
@@ -454,6 +474,12 @@ h = { a: 1, b: 2 }; h.values.include?(nil)
 h = { a: 1, b: 2 }; h.value?(nil)
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.56` | Float
+
 ### References
 
 * [https://github.com/JuanitoFatas/fast-ruby#hashkey-instead-of-hashkeysinclude-code](https://github.com/JuanitoFatas/fast-ruby#hashkey-instead-of-hashkeysinclude-code)
@@ -477,6 +503,12 @@ This cop identifies places where `lstrip.rstrip` can be replaced by
 # good
 'abc'.strip
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.36` | Float
 
 ## Performance/RangeInclude
 
@@ -504,6 +536,12 @@ is wanted.
 
 ('a'..'z').cover?('yellow') # => true
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.36` | Float
 
 ### References
 
@@ -538,6 +576,12 @@ def another
 end
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.36` | Float
+
 ### References
 
 * [https://github.com/JuanitoFatas/fast-ruby#proccall-and-block-arguments-vs-yieldcode](https://github.com/JuanitoFatas/fast-ruby#proccall-and-block-arguments-vs-yieldcode)
@@ -566,6 +610,12 @@ method(str =~ /regex/)
 return value unless regex =~ 'str'
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.36` | Float
+
 ## Performance/RedundantMerge
 
 Enabled by default | Supports autocorrection
@@ -587,6 +637,7 @@ hash.merge!(a: 1, b: 2)
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.36` | Float
 MaxKeyValuePairs | `2` | Integer
 
 ### References
@@ -614,6 +665,12 @@ end
 # good
 array.sort
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.36` | Float
 
 ## Performance/RegexpMatch
 
@@ -693,6 +750,12 @@ def foo
   end
 end
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.47` | Float
 
 ### References
 
@@ -818,7 +881,10 @@ This cop identifies unnecessary use of a regex where
 
 Name | Default value | Configurable values
 --- | --- | ---
+SafeAutoCorrect | `false` | Boolean
 AutoCorrect | `false` | Boolean
+VersionAdded | `0.36` | Float
+VersionChanged | `0.44` | Float
 
 ### References
 
@@ -882,6 +948,9 @@ end
 Name | Default value | Configurable values
 --- | --- | ---
 AutoCorrect | `false` | Boolean
+VersionAdded | `0.36` | Float
+VersionChanged | `0.5` | Float
+SafeAutocorrect | `false` | Boolean
 
 ## Performance/UnfreezeString
 
@@ -912,6 +981,12 @@ String.new('something')
 +'something'
 +''
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.5` | Float
 
 ## Performance/UnneededSort
 
@@ -968,6 +1043,12 @@ arr.sort_by(&:foo).slice(-1)
 arr.max_by(&:foo)
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.55` | Float
+
 ## Performance/UriDefaultParser
 
 Enabled by default | Supports autocorrection
@@ -986,3 +1067,9 @@ URI::Parser.new
 # good
 URI::DEFAULT_PARSER
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.5` | Float

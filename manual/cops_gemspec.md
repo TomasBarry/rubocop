@@ -45,6 +45,7 @@ end
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.52` | Float
 Include | `**/*.gemspec` | Array
 
 ## Gemspec/OrderedDependencies
@@ -108,8 +109,9 @@ spec.add_dependency 'rspec'
 
 Name | Default value | Configurable values
 --- | --- | ---
-Include | `**/*.gemspec` | Array
 TreatCommentsAsGroupSeparators | `true` | Boolean
+VersionAdded | `0.51` | Float
+Include | `**/*.gemspec` | Array
 
 ## Gemspec/RequiredRubyVersion
 
@@ -157,4 +159,5 @@ end
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.52` | Float
 Include | `**/*.gemspec` | Array

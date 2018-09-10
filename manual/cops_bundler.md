@@ -37,6 +37,7 @@ gem 'rubocop', groups: [:development, :test]
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.46` | Float
 Include | `**/*.gemfile`, `**/Gemfile`, `**/gems.rb` | Array
 
 ## Bundler/GemComment
@@ -64,6 +65,7 @@ gem 'foo'
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.59` | Float
 Include | `**/*.gemfile`, `**/Gemfile`, `**/gems.rb` | Array
 Whitelist | `[]` | Array
 
@@ -103,6 +105,7 @@ source 'http://rubygems.org'
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.5` | Float
 Include | `**/*.gemfile`, `**/Gemfile`, `**/gems.rb` | Array
 
 ## Bundler/OrderedGems
@@ -140,5 +143,7 @@ gem 'rspec'
 
 Name | Default value | Configurable values
 --- | --- | ---
-Include | `**/*.gemfile`, `**/Gemfile`, `**/gems.rb` | Array
+VersionAdded | `0.46` | Float
+VersionChanged | `0.47` | Float
 TreatCommentsAsGroupSeparators | `true` | Boolean
+Include | `**/*.gemfile`, `**/Gemfile`, `**/gems.rb` | Array

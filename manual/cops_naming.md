@@ -28,6 +28,12 @@ def attribute
 end
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.5` | Float
+
 ### References
 
 * [https://github.com/rubocop-hq/ruby-style-guide#accessor_mutator_method_names](https://github.com/rubocop-hq/ruby-style-guide#accessor_mutator_method_names)
@@ -72,6 +78,12 @@ params[:عرض_gteq] # Arabic character (non-ascii)
 params[:width_gteq]
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.5` | Float
+
 ### References
 
 * [https://github.com/rubocop-hq/ruby-style-guide#english-identifiers](https://github.com/rubocop-hq/ruby-style-guide#english-identifiers)
@@ -94,6 +106,12 @@ def +(amount); end
 # good
 def +(other); end
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.5` | Float
 
 ### References
 
@@ -124,6 +142,12 @@ module MyModule
 end
 ```
 
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.5` | Float
+
 ### References
 
 * [https://github.com/rubocop-hq/ruby-style-guide#camelcase-classes](https://github.com/rubocop-hq/ruby-style-guide#camelcase-classes)
@@ -151,6 +175,12 @@ Inch_In_Cm = 2.54
 # good
 INCH_IN_CM = 2.54
 ```
+
+### Configurable attributes
+
+Name | Default value | Configurable values
+--- | --- | ---
+VersionAdded | `0.5` | Float
 
 ### References
 
@@ -189,6 +219,7 @@ anything/using_snake_case.rake
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.5` | Float
 Exclude | `[]` | Array
 ExpectMatchingDefinition | `false` | Boolean
 Regex | `<none>` | 
@@ -241,6 +272,7 @@ sql
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.5` | Float
 EnforcedStyle | `uppercase` | `lowercase`, `uppercase`
 
 ### References
@@ -280,6 +312,7 @@ EOS
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.5` | Float
 Blacklist | `(?-mix:(^|\s)(EO[A-Z]{1}|END)(\s|$))` | Array
 
 ### References
@@ -387,6 +420,8 @@ end
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.53` | Float
+VersionChanged | `0.58` | Float
 EnforcedStyleForLeadingUnderscores | `disallowed` | `disallowed`, `required`, `optional`
 
 ## Naming/MethodName
@@ -423,6 +458,7 @@ def fooBar; end
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.5` | Float
 EnforcedStyle | `snake_case` | `snake_case`, `camelCase`
 
 ### References
@@ -461,6 +497,8 @@ end
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.5` | Float
+VersionChanged | `0.51` | Float
 NamePrefix | `is_`, `has_`, `have_` | Array
 NamePrefixBlacklist | `is_`, `has_`, `have_` | Array
 NameWhitelist | `is_a?` | Array
@@ -517,6 +555,7 @@ baz { |age, height, gender| do_stuff(age, height, gender) }
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.53` | Float
 MinNameLength | `1` | Integer
 AllowNamesEndingInNumbers | `true` | Boolean
 AllowedNames | `[]` | Array
@@ -576,6 +615,8 @@ end
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.53` | Float
+VersionChanged | `0.59` | Float
 MinNameLength | `3` | Integer
 AllowNamesEndingInNumbers | `true` | Boolean
 AllowedNames | `io`, `id`, `to`, `by`, `on`, `in`, `at`, `ip`, `db` | Array
@@ -615,6 +656,7 @@ fooBar = 1
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.5` | Float
 EnforcedStyle | `snake_case` | `snake_case`, `camelCase`
 
 ### References
@@ -675,4 +717,5 @@ variable_one = 1
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.5` | Float
 EnforcedStyle | `normalcase` | `snake_case`, `normalcase`, `non_integer`

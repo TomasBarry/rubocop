@@ -35,6 +35,8 @@ The cop can be configured to ignore blocks passed to certain methods.
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionAdded | `0.44` | Float
+VersionChanged | `0.58` | Float
 CountComments | `false` | Boolean
 Max | `25` | Integer
 ExcludedMethods | `refine` | Array
@@ -58,6 +60,7 @@ The maximum level of nesting allowed is configurable.
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionChanged | `0.47` | Float
 CountBlocks | `false` | Boolean
 Max | `3` | Integer
 
@@ -120,6 +123,7 @@ of the `Layout/Tab` cop.
 
 Name | Default value | Configurable values
 --- | --- | ---
+VersionChanged | `0.46` | Float
 Max | `80` | Integer
 AllowHeredoc | `true` | Boolean
 AllowURI | `true` | Boolean
