@@ -410,6 +410,7 @@ Layout/ConditionPosition:
 Layout/DefEndAlignment:
   Description: 'Align ends corresponding to defs correctly.'
   Enabled: true
+  VersionAdded: 0.53
   # The value `def` means that `end` should be aligned with the def keyword.
   # The value `start_of_line` means that `end` should be aligned with method
   # calls like `private`, `public`, etc, if present in front of the `def`
@@ -420,7 +421,6 @@ Layout/DefEndAlignment:
     - def
   AutoCorrect: false
   Severity: warning
-  VersionAdded: 0.53
 
 Layout/DotPosition:
   Description: 'Checks the position of the dot in multi-line method calls.'
@@ -1391,6 +1391,7 @@ Style/ArrayJoin:
   Description: 'Use Array#join instead of Array#*.'
   StyleGuide: '#array-join'
   Enabled: true
+  VersionChanged: 0.31
 
 Style/AsciiComments:
   Description: 'Use only ascii symbols in comments.'
@@ -1407,6 +1408,7 @@ Style/Attr:
 Style/AutoResourceCleanup:
   Description: 'Suggests the usage of an auto resource cleanup version of a method (if available).'
   Enabled: false
+  VersionAdded: 0.30
 
 Style/BarePercentLiterals:
   Description: 'Checks if usage of %() or %Q() matches configuration.'
@@ -1434,6 +1436,7 @@ Style/BlockDelimiters:
                 Prefer {...} over do...end for single-line blocks.
   StyleGuide: '#single-line-blocks'
   Enabled: true
+  VersionChanged: 0.35
   EnforcedStyle: line_count_based
   SupportedStyles:
     # The `line_count_based` style enforces braces around single line blocks and
@@ -1611,6 +1614,7 @@ Style/CommandLiteral:
   Description: 'Use `` or %x around command literals.'
   StyleGuide: '#percent-x'
   Enabled: true
+  VersionAdded: 0.30
   EnforcedStyle: backticks
   # backticks: Always use backticks.
   # percent_x: Always use `%x`.
@@ -1630,6 +1634,7 @@ Style/CommentAnnotation:
                  (TODO, FIXME, OPTIMIZE, HACK, REVIEW).
   StyleGuide: '#annotate-keywords'
   Enabled: true
+  VersionChanged: 0.31
   Keywords:
     - TODO
     - FIXME
@@ -1753,6 +1758,7 @@ Style/EmptyCaseCondition:
 Style/EmptyElse:
   Description: 'Avoid empty else-clauses.'
   Enabled: true
+  VersionChanged: 0.32
   EnforcedStyle: both
   # empty - warn only on empty `else`
   # nil - warn on `else` with nil in it
@@ -1802,6 +1808,7 @@ Style/EvenOdd:
   Description: 'Favor the use of Integer#even? && Integer#odd?'
   StyleGuide: '#predicate-methods'
   Enabled: true
+  VersionChanged: 0.29
 
 Style/ExpandPathArguments:
   Description: "Use `expand_path(__dir__)` instead of `expand_path('..', __FILE__)`."
@@ -1926,6 +1933,7 @@ Style/IfUnlessModifier:
                  single-line body.
   StyleGuide: '#if-as-a-modifier'
   Enabled: true
+  VersionChanged: 0.30
 
 Style/IfUnlessModifierOfIfUnless:
   Description: >-
@@ -2043,6 +2051,7 @@ Style/MethodDefParentheses:
                  parentheses.
   StyleGuide: '#method-parens'
   Enabled: true
+  VersionChanged: 0.35
   EnforcedStyle: require_parentheses
   SupportedStyles:
     - require_parentheses
@@ -2070,6 +2079,7 @@ Style/MissingElse:
                 This will conflict with Style/EmptyElse if
                 Style/EmptyElse is configured to style "both"
   Enabled: false
+  VersionAdded: 0.30
   VersionChanged: 0.38
   EnforcedStyle: both
   SupportedStyles:
@@ -2164,6 +2174,7 @@ Style/MultipleComparison:
 Style/MutableConstant:
   Description: 'Do not assign mutable objects to constants.'
   Enabled: true
+  VersionAdded: 0.34
 
 Style/NegatedIf:
   Description: >-
@@ -2190,6 +2201,7 @@ Style/NestedModifier:
   Description: 'Avoid using nested modifiers.'
   StyleGuide: '#no-nested-modifiers'
   Enabled: true
+  VersionAdded: 0.35
 
 Style/NestedParenthesizedCalls:
   Description: >-
@@ -2226,6 +2238,7 @@ Style/Next:
   Description: 'Use `next` to skip iteration instead of a condition at the end.'
   StyleGuide: '#no-nested-conditionals'
   Enabled: true
+  VersionChanged: 0.35
   # With `always` all conditions at the end of an iteration needs to be
   # replaced by next - with `skip_modifier_ifs` the modifier if like this one
   # are ignored: [1, 2].each { |a| return 'yes' if a == 1 }
@@ -2318,6 +2331,8 @@ Style/OneLineConditional:
 Style/OptionHash:
   Description: "Don't use option hashes when you can use keyword arguments."
   Enabled: false
+  VersionAdded: 0.33
+  VersionChanged: 0.34
   # A list of parameter names that will be flagged by this cop.
   SuspiciousParamNames:
     - options
@@ -2332,6 +2347,7 @@ Style/OptionalArguments:
                  of the argument list
   StyleGuide: '#optional-arguments'
   Enabled: true
+  VersionAdded: 0.33
 
 Style/OrAssignment:
   Description: 'Recommend usage of double pipe equals (||=) where applicable.'
@@ -2346,6 +2362,7 @@ Style/ParallelAssignment:
                   matches on both sides of the assignment.
   StyleGuide: '#parallel-assignment'
   Enabled: true
+  VersionAdded: 0.32
 
 Style/ParenthesesAroundCondition:
   Description: >-
@@ -2434,10 +2451,12 @@ Style/RedundantException:
   Description: "Checks for an obsolete RuntimeException argument in raise/fail."
   StyleGuide: '#no-explicit-runtimeerror'
   Enabled: true
+  VersionChanged: 0.29
 
 Style/RedundantFreeze:
   Description: "Checks usages of Object#freeze on immutable objects."
   Enabled: true
+  VersionAdded: 0.34
 
 Style/RedundantParentheses:
   Description: "Checks for parentheses that seem not to serve any purpose."
@@ -2460,6 +2479,7 @@ Style/RegexpLiteral:
   Description: 'Use / or %r around regular expressions.'
   StyleGuide: '#percent-r'
   Enabled: true
+  VersionChanged: 0.30
   EnforcedStyle: slashes
   # slashes: Always use slashes.
   # percent_r: Always use `%r`.
@@ -2476,6 +2496,7 @@ Style/RescueModifier:
   Description: 'Avoid using rescue in its modifier form.'
   StyleGuide: '#no-rescue-modifiers'
   Enabled: true
+  VersionChanged: 0.34
 
 Style/RescueStandardError:
   Description: 'Avoid rescuing without specifying an error class.'
@@ -2522,6 +2543,7 @@ Style/SelfAssignment:
                  been used.
   StyleGuide: '#self-assignment'
   Enabled: true
+  VersionChanged: 0.29
 
 Style/Semicolon:
   Description: "Don't use semicolons to terminate expressions."
@@ -2534,6 +2556,7 @@ Style/Send:
   Description: 'Prefer `Object#__send__` or `Object#public_send` to `send`, as `send` may overlap with existing methods.'
   StyleGuide: '#prefer-public-send'
   Enabled: false
+  VersionAdded: 0.33
 
 Style/SignalException:
   Description: 'Checks for proper usage of fail and raise.'
@@ -2578,6 +2601,7 @@ Style/StabbyLambdaParentheses:
   Description: 'Check for the usage of parentheses around stabby lambda arguments.'
   StyleGuide: '#stabby-lambda-with-args'
   Enabled: true
+  VersionAdded: 0.35
   EnforcedStyle: require_parentheses
   SupportedStyles:
     - require_parentheses
@@ -2621,6 +2645,8 @@ Style/StringLiteralsInInterpolation:
 Style/StringMethods:
   Description: 'Checks if configured preferred methods are used over non-preferred.'
   Enabled: false
+  VersionAdded: 0.34
+  VersionChanged: 0.34.2
   # Mapping from undesired method to desired_method
   # e.g. to use `to_sym` over `intern`:
   #
@@ -2634,6 +2660,7 @@ Style/StructInheritance:
   Description: 'Checks for inheritance from Struct.new.'
   StyleGuide: '#no-extend-struct-new'
   Enabled: true
+  VersionAdded: 0.29
 
 Style/SymbolArray:
   Description: 'Use %i or %I for arrays of symbols.'
@@ -2649,6 +2676,7 @@ Style/SymbolArray:
 Style/SymbolLiteral:
   Description: 'Use plain symbols instead of string symbols when possible.'
   Enabled: true
+  VersionAdded: 0.30
 
 Style/SymbolProc:
   Description: 'Use symbols as procs instead of blocks when possible.'
@@ -2705,6 +2733,7 @@ Style/TrailingCommaInArrayLiteral:
   Description: 'Checks for trailing comma in array literals.'
   StyleGuide: '#no-trailing-array-commas'
   Enabled: true
+  VersionAdded: 0.53
   # but only when each item is on its own line.
   # If `consistent_comma`, the cop requires a comma after the last item of all
   # non-empty array literals.
@@ -2713,7 +2742,6 @@ Style/TrailingCommaInArrayLiteral:
     - comma
     - consistent_comma
     - no_comma
-  VersionAdded: 0.53
 
 Style/TrailingCommaInHashLiteral:
   Description: 'Checks for trailing comma in hash literals.'
@@ -2740,6 +2768,8 @@ Style/TrailingUnderscoreVariable:
                  end of parallel variable assignment.
   AllowNamedUnderscoreVariables: true
   Enabled: true
+  VersionAdded: 0.31
+  VersionChanged: 0.35
 
 # `TrivialAccessors` requires exact name matches and doesn't allow
 # predicated methods by default.
@@ -2843,6 +2873,7 @@ Style/WhileUntilModifier:
                  single-line body.
   StyleGuide: '#while-as-a-modifier'
   Enabled: true
+  VersionChanged: 0.30
 
 Style/WordArray:
   Description: 'Use %w or %W for arrays of words.'
@@ -2958,6 +2989,7 @@ Metrics/MethodLength:
 Metrics/ModuleLength:
   Description: 'Avoid modules longer than 100 lines of code.'
   Enabled: true
+  VersionAdded: 0.31
   CountComments: false  # count full line comments?
   Max: 100
 
@@ -3018,6 +3050,7 @@ Lint/BooleanSymbol:
 Lint/CircularArgumentReference:
   Description: "Default values in optional keyword arguments and optional ordinal arguments should not refer back to the name of the argument."
   Enabled: true
+  VersionAdded: 0.33
 
 Lint/Debugger:
   Description: 'Check for debugger calls.'
@@ -3035,14 +3068,17 @@ Lint/DuplicateCaseCondition:
 Lint/DuplicateMethods:
   Description: 'Check for duplicate method definitions.'
   Enabled: true
+  VersionAdded: 0.29
 
 Lint/DuplicatedKey:
   Description: 'Check for duplicate keys in hash literals.'
   Enabled: true
+  VersionAdded: 0.34
 
 Lint/EachWithObjectArgument:
   Description: 'Check for immutable argument given to each_with_object.'
   Enabled: true
+  VersionAdded: 0.31
 
 Lint/ElseLayout:
   Description: 'Check for odd code arrangement in an else block.'
@@ -3093,6 +3129,7 @@ Lint/FloatOutOfRange:
 Lint/FormatParameterMismatch:
   Description: 'The number of parameters to format/sprint must match the fields.'
   Enabled: true
+  VersionAdded: 0.33
 
 Lint/HandleExceptions:
   Description: "Don't suppress exception."
@@ -3135,6 +3172,7 @@ Lint/LiteralAsCondition:
 Lint/LiteralInInterpolation:
   Description: 'Checks for literals used in interpolation.'
   Enabled: true
+  VersionChanged: 0.32
 
 Lint/Loop:
   Description: >-
@@ -3165,6 +3203,7 @@ Lint/NestedMethodDefinition:
   Description: 'Do not use nested method definitions.'
   StyleGuide: '#no-nested-methods'
   Enabled: true
+  VersionAdded: 0.32
 
 Lint/NestedPercentLiteral:
   Description: 'Checks for nested percent literals.'
@@ -3179,6 +3218,7 @@ Lint/NextWithoutAccumulator:
 Lint/NonLocalExitFromIterator:
   Description: 'Do not use return in iterator to cause non-local exit.'
   Enabled: true
+  VersionAdded: 0.30
 
 Lint/NumberConversion:
   Description: 'Checks unsafe usage of number conversion methods.'
@@ -3361,6 +3401,7 @@ Lint/UnusedMethodArgument:
   Description: 'Checks for unused method arguments.'
   StyleGuide: '#underscore-unused-vars'
   Enabled: true
+  VersionChanged: 0.35
   AllowUnusedKeywordArguments: false
   IgnoreEmptyMethods: true
 
@@ -3429,6 +3470,7 @@ Performance/CaseWhenSplat:
                  of the `when` branches can improve performance.
   Enabled: false
   AutoCorrect: false
+  VersionAdded: 0.34
   VersionChanged: 0.59
 
 Performance/ChainArrayAllocation:
@@ -3454,6 +3496,7 @@ Performance/Count:
   # If you understand the known risk, you can disable `SafeMode`.
   SafeMode: true
   Enabled: true
+  VersionAdded: 0.31
   VersionChanged: 0.39
 
 Performance/Detect:
@@ -3467,6 +3510,7 @@ Performance/Detect:
   # should be considered unsafe.
   SafeMode: true
   Enabled: true
+  VersionAdded: 0.30
   VersionChanged: 0.39
 
 Performance/DoubleStartEndWith:
@@ -3495,6 +3539,7 @@ Performance/EndWith:
 Performance/FixedSize:
   Description: 'Do not compute the size of statically sized objects except in constants'
   Enabled: true
+  VersionAdded: 0.35
 
 Performance/FlatMap:
   Description: >-
@@ -3503,6 +3548,7 @@ Performance/FlatMap:
                   or `Enumberable#collect..Array#flatten(1)`
   Reference: 'https://github.com/JuanitoFatas/fast-ruby#enumerablemaparrayflatten-vs-enumerableflat_map-code'
   Enabled: true
+  VersionAdded: 0.30
   EnabledForFlattenWithoutParams: false
   # If enabled, this cop will warn about usages of
   # `flatten` being called without any parameters.
@@ -3564,6 +3610,7 @@ Performance/ReverseEach:
   Description: 'Use `reverse_each` instead of `reverse.each`.'
   Reference: 'https://github.com/JuanitoFatas/fast-ruby#enumerablereverseeach-vs-enumerablereverse_each-code'
   Enabled: true
+  VersionAdded: 0.30
 
 Performance/Sample:
   Description: >-
@@ -3571,6 +3618,7 @@ Performance/Sample:
                   `shuffle.last`, and `shuffle[Integer]`.
   Reference: 'https://github.com/JuanitoFatas/fast-ruby#arrayshufflefirst-vs-arraysample-code'
   Enabled: true
+  VersionAdded: 0.30
 
 Performance/Size:
   Description: >-
@@ -3578,6 +3626,7 @@ Performance/Size:
                   the number of elements in `Array` and `Hash`.
   Reference: 'https://github.com/JuanitoFatas/fast-ruby#arraylength-vs-arraysize-vs-arraycount-code'
   Enabled: true
+  VersionAdded: 0.30
 
 Performance/StartWith:
   Description: 'Use `start_with?` instead of a regex match anchored to the beginning of a string.'
@@ -3598,6 +3647,7 @@ Performance/StringReplacement:
                   you are deleting characters.
   Reference: 'https://github.com/JuanitoFatas/fast-ruby#stringgsub-vs-stringtr-code'
   Enabled: true
+  VersionAdded: 0.33
 
 Performance/TimesMap:
   Description: 'Checks for .times.map calls.'
@@ -3710,6 +3760,8 @@ Rails/Date:
                   Checks the correct usage of date aware methods,
                   such as Date.today, Date.current etc.
   Enabled: true
+  VersionAdded: 0.30
+  VersionChanged: 0.33
   # The value `strict` disallows usage of `Date.today`, `Date.current`,
   # `Date#to_time` etc.
   # The value `flexible` allows usage of `Date.current`, `Date.yesterday`, etc
@@ -3782,6 +3834,7 @@ Rails/FindBy:
   Description: 'Prefer find_by over where.first.'
   StyleGuide: 'https://github.com/rubocop-hq/rails-style-guide#find_by'
   Enabled: true
+  VersionAdded: 0.30
   Include:
     - app/models/**/*.rb
 
@@ -3789,6 +3842,7 @@ Rails/FindEach:
   Description: 'Prefer all.find_each over all.find.'
   StyleGuide: 'https://github.com/rubocop-hq/rails-style-guide#find-each'
   Enabled: true
+  VersionAdded: 0.30
   Include:
     - app/models/**/*.rb
 
@@ -3864,6 +3918,7 @@ Rails/OutputSafety:
 Rails/PluralizationGrammar:
   Description: 'Checks for incorrect grammar when using methods like `3.day.ago`.'
   Enabled: true
+  VersionAdded: 0.35
 
 Rails/Presence:
   Description: 'Checks code that can be written more easily using `Object#presence` defined by Active Support.'
@@ -3887,6 +3942,7 @@ Rails/ReadWriteAttribute:
                  write_attribute(:attr, val).
   StyleGuide: 'https://github.com/rubocop-hq/rails-style-guide#read-attribute'
   Enabled: true
+  VersionChanged: 0.29
   Include:
     - app/models/**/*.rb
 
@@ -3977,6 +4033,8 @@ Rails/TimeZone:
   StyleGuide: 'https://github.com/rubocop-hq/rails-style-guide#time'
   Reference: 'http://danilenko.org/2012/7/6/rails_timezones'
   Enabled: true
+  VersionAdded: 0.30
+  VersionChanged: 0.33
   # The value `strict` means that `Time` should be used with `zone`.
   # The value `flexible` allows usage of `in_time_zone` instead of `zone`.
   EnforcedStyle: flexible
@@ -4042,6 +4100,7 @@ Security/Open:
   Description: 'The use of Kernel#open represents a serious security risk.'
   Enabled: true
   VersionAdded: 0.53
+  Safe: false
 
 Security/YAMLLoad:
   Description: >-
